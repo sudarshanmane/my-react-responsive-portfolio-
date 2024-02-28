@@ -1,0 +1,49 @@
+@media screen and (max-width: 1125px) and (min-width: 980.99px) {
+    .desc-img-container {
+        font-size: 18px;
+    }
+
+    .desc-container{
+        font-size: 18px !important ;
+    }
+
+}
+
+@media screen and (max-width: 980px) and (min-width: 766px) {
+ 
+
+   .my-name-desc{
+    font-size: 35px !important;
+   }
+    .desc-container{
+        font-size: 18px !important ;
+    }
+
+}
+
+@media screen and (max-width: 766px) {
+    .img-container-seatedImage{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+     .my-name-desc{
+    font-size: 28px !important;
+   }
+    .desc-container{
+        font-size: 16px !important ;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1147px) and (min-width: 766px) {
+
+   .what-fronend-development
+   {
+    grid-template-columns: repeat(1,1fr);
+   }
+    
+
+}

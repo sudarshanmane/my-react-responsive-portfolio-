@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Tangerine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Nothing+You+Could+Do&family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Ephesis&family=Nothing+You+Could+Do&family=Tangerine:wght@400;700&display=swap");
+
+.navbar-container {
+    position: fixed;
+}
+
+.navbar, .ant-drawer-header{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    background: linear-gradient(to right, #c0e9c6, #bbc6fa);
+    font-size: 20px;
+}
+
+
+ .ant-drawer-body{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    background: linear-gradient(to right, #dbdff5, #cbd2f3);
+}
+
+.my-name {
+    font-style: normal;
+    font-family: "Ephesis", cursive;
+    font-size: 30px;
+}
