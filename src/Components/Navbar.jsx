@@ -27,9 +27,7 @@ const Navbar = () => {
   // active nav link
   const location = useLocation();
   const navigate = useNavigate();
-  useEffect(() => {
-    console.log(location.pathname.split("/").includes("home"));
-  }, [location]);
+  useEffect(() => {}, [location]);
 
   const navigateToLocation = (path) => {
     navigate(path, { replace: true });
@@ -51,16 +49,7 @@ const Navbar = () => {
           >
             Home
           </NavLink>
-          <NavLink
-            to="/home/skills"
-            id={
-              location.pathname.split("/").includes("skills")
-                ? "current-component"
-                : ""
-            }
-          >
-            Skills
-          </NavLink>
+
           <NavLink
             to="/home/education"
             id={
@@ -70,6 +59,16 @@ const Navbar = () => {
             }
           >
             Education
+          </NavLink>
+          <NavLink
+            to="/home/skills"
+            id={
+              location.pathname.split("/").includes("skills")
+                ? "current-component"
+                : ""
+            }
+          >
+            Skills
           </NavLink>
           <NavLink
             to="/home/experience"
@@ -137,6 +136,20 @@ const Navbar = () => {
         >
           Education
         </div>
+
+        <div
+          className={`w-64 pl-2 rounded-xl border py-2 mb-1`}
+          id={
+            location.pathname.split("/").includes("skills")
+              ? "current-component-drawer"
+              : ""
+          }
+          onClick={() => navigateToLocation("/home/skills")}
+          role="button"
+        >
+          Skills
+        </div>
+
         <div className="mb-3"></div>
         <div
           className={`w-64 pl-2 rounded-xl border py-2 mb-1`}

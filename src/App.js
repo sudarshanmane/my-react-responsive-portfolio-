@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Navbar from "./Components/Navbar";
 import { Outlet } from "react-router-dom";
 
@@ -6,7 +7,9 @@ function App() {
     <div>
       <Navbar></Navbar>
       <div className="px-10">
-        <Outlet />
+        <Suspense fallback="loading...">
+          <Outlet />
+        </Suspense>
       </div>
     </div>
   );

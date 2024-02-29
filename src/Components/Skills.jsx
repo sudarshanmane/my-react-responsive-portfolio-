@@ -21,7 +21,7 @@ const Skills = () => {
           <img
             className="h-24 w-28"
             alt=""
-            src={require("../images/html.png")}
+            src={require("../images/css.png")}
           />
           <h1 className="text-center font-semibold">CSS</h1>
         </>
@@ -116,6 +116,7 @@ const Skills = () => {
       transparent: true,
     },
   ];
+
   const tools = [
     {
       img: (
