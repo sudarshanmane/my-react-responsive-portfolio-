@@ -11,7 +11,7 @@ import Footer from "./Footer";
 
 const HireMe = () => {
   return (
-    <div>
+    <div className="h-screen">
       <div className="h-20"></div>
       <div className="grid gap-10 mt-10 grid-cols-1 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 ">
         <div className="flex    ">
@@ -57,13 +57,34 @@ const HireMe = () => {
                 target="_blank"
               >
                 <Button className="bg-violet-950 text-white font-semibold text-lg mt-2 px-20 py-5 flex items-center justify-content-center">
-                  <span> Resume</span>
+                  <span> See my Resume</span>
                 </Button>
               </Link>
             </span>
           </div>
         </div>
       </div>
+      <div className="grid gap-10 mt-10 grid-cols-1 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 ">
+        <div className="flex  flex-col items-center">
+          <h1 className="text-center text-2xl font-semibold text-violet-950">
+            Blogs
+          </h1>
+          <h2 className=" text-center font-semibold text-violet-950">
+            🌟 Explore the latest insights and tutorials on ReactJS on my Medium
+            blog! 📚 Dive into the world of web development with expert tips and
+            tricks. Click here to visit:
+          </h2>
+          <div>
+            <Button className=" bg-violet-950 text-white font-semibold text-lg mt-2 px-10 py-5 flex items-center justify-content-center">
+              Visit My Blogs site
+            </Button>
+          </div>
+        </div>
+        <div>
+          <img src={require("../images/blogs.png")} alt="" />
+        </div>
+      </div>
+      <div className="mt-48"></div>
       <Footer></Footer>
     </div>
   );
