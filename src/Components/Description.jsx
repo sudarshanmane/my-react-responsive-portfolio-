@@ -1,6 +1,6 @@
 import React from "react";
 import "../images/seatedImage.png";
-import { Button } from "antd";
+import { Button, Space } from "antd";
 import { Link } from "react-router-dom";
 import {
   GithubOutlined,
@@ -12,7 +12,19 @@ const Description = () => {
   return (
     <div className="position-relative pt-40">
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-12 desc-img-container">
-        <div>
+        <div className="">
+          <h1
+            className="font-semibold  text-violet-950 my-name-desc flex items-center"
+            style={{ fontSize: "50px" }}
+          >
+            <span>Hi</span>{" "}
+            <img
+              className="hi_image w-12 h-12 flex"
+              src={require("../images/HiImage.gif")}
+              alt=""
+            />
+            <span>I'm</span>
+          </h1>
           <h1
             className="font-semibold  text-violet-950 my-name-desc"
             style={{ fontSize: "50px" }}
@@ -48,8 +60,28 @@ const Description = () => {
               <LinkedinOutlined />
             </Link>
 
-            <Link to={"https://medium.com/@sudarshanmane2110"} target="_blank">
-              <MediumOutlined />
+            <Link
+              to={"https://medium.com/@sudarshanmane2110"}
+              target="_blank"
+              className="flex items-center mr-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+                width="1em"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                class="iconify"
+                data-icon="simple-icons:medium"
+                data-inline="false"
+              >
+                <path
+                  fill="currentColor"
+                  d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12m7.42 0c0 3.54-1.51 6.42-3.38 6.42c-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42s3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75c-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12"
+                ></path>
+              </svg>
             </Link>
 
             <Link to={"https://leetcode.com/sudarshanmane/"} target="_blank">
@@ -61,12 +93,52 @@ const Description = () => {
                 />
               </div>
             </Link>
+            <Link to={"https://replit.com/@SudarshanMane1"} target="_blank">
+              <div className="mt-1" style={{ marginLeft: "-5px" }}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 256 256"
+                  class="iconify"
+                  data-icon="skill-icons:replit-dark"
+                  data-inline="false"
+                >
+                  <g fill="none">
+                    <rect
+                      width="256"
+                      height="256"
+                      fill="#242938"
+                      rx="60"
+                    ></rect>
+                    <path
+                      fill="#F26207"
+                      d="M53 49.25C53 43.037 58.037 38 64.25 38h52.5c6.213 0 11.25 5.037 11.25 11.25V98H64.25C58.037 98 53 92.963 53 86.75zm74.999 48.752h63.75c6.213 0 11.25 5.037 11.25 11.25v37.5c0 6.213-5.037 11.25-11.25 11.25h-63.75z"
+                    ></path>
+                    <path
+                      fill="#F26207"
+                      d="M53 169.25c0-6.213 5.037-11.25 11.25-11.25H128v48.75c0 6.213-5.037 11.25-11.25 11.25h-52.5C58.037 218 53 212.963 53 206.75z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </Link>
           </div>
-          <Link to={"https://github.com/sudarshanmane"} target="_blank">
-            <Button className="bg-sky-600 text-white font-semibold mt-2">
-              ⭐ Star Me On Github
-            </Button>
-          </Link>
+          <Space>
+            <Link to={"https://github.com/sudarshanmane"} target="_blank">
+              <Button className="bg-sky-600 text-white font-semibold mt-2">
+                Resume
+              </Button>
+            </Link>
+            <Link to={"https://github.com/sudarshanmane"} target="_blank">
+              <Button className="bg-sky-600 text-white font-semibold mt-2">
+                ⭐ Star Me On Github
+              </Button>
+            </Link>
+          </Space>
         </div>
         <div className="flex items-center img-container-seatedImage justify-center ">
           <img src={require("../images/seatedImage.png")} alt="" />
@@ -98,7 +170,7 @@ const Description = () => {
               height="1em"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 24 24"
-              class="iconify"
+              className="iconify"
               data-icon="simple-icons:html5"
               data-inline="false"
             >
@@ -115,7 +187,7 @@ const Description = () => {
               height="1em"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 1792 1600"
-              class="iconify"
+              className="iconify"
               data-icon="fa-css3"
               data-inline="false"
             >
@@ -132,7 +204,7 @@ const Description = () => {
               height="1em"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 256 192"
-              class="iconify"
+              className="iconify"
               data-icon="logos:sass"
               data-inline="false"
             >
@@ -150,7 +222,7 @@ const Description = () => {
               height="1em"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 24 24"
-              class="iconify"
+              className="iconify"
               data-icon="simple-icons:javascript"
               data-inline="false"
             >
@@ -167,7 +239,7 @@ const Description = () => {
               height="1em"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 24 24"
-              class="iconify"
+              className="iconify"
               data-icon="simple-icons:react"
               data-inline="false"
             >
@@ -184,7 +256,7 @@ const Description = () => {
               height="1em"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 24 24"
-              class="iconify"
+              className="iconify"
               data-icon="simple-icons:typescript"
               data-inline="false"
             >
@@ -201,7 +273,7 @@ const Description = () => {
               width="1em"
               height="1em"
               viewBox="0 0 24 24"
-              class="iconify"
+              className="iconify"
               data-icon="simple-icons:antdesign"
               data-inline="false"
             >
@@ -218,7 +290,7 @@ const Description = () => {
               height="1em"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 256 290"
-              class="iconify"
+              className="iconify"
               data-icon="logos-webpack"
               data-inline="false"
             >
@@ -243,14 +315,14 @@ const Description = () => {
               width="1em"
               height="1em"
               viewBox="0 0 24 24"
-              class="iconify"
+              className="iconify"
               data-icon="tabler:brand-react-native"
               data-inline="false"
             >
               <g
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
               >
@@ -270,7 +342,7 @@ const Description = () => {
               height="1em"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 256 256"
-              class="iconify"
+              className="iconify"
               data-icon="skill-icons:tailwindcss-dark"
               data-inline="false"
             >
@@ -305,7 +377,7 @@ const Description = () => {
               height="1em"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 24 24"
-              class="iconify"
+              className="iconify"
               data-icon="simple-icons:npm"
               data-inline="false"
             >
@@ -326,7 +398,7 @@ const Description = () => {
               width="1em"
               height="1em"
               viewBox="0 0 256 256"
-              class="iconify"
+              className="iconify"
               data-icon="logos:nextjs-icon"
               data-inline="false"
             >
@@ -381,7 +453,7 @@ const Description = () => {
               height="1em"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 256 283"
-              class="iconify"
+              className="iconify"
               data-icon="logos:jest"
               data-inline="false"
             >
@@ -425,15 +497,11 @@ const Description = () => {
               <li>
                 <h1>⚡Tailwind CSS Charm: Styling Simplified</h1>
               </li>
-              <li>
-                <h1>⚡Building responsive web Design</h1>
-              </li>
             </ul>
           </div>
         </div>
       </div>
       <hr style={{ borderColor: "orange", marginTop: "15px" }} />
-
       <div className="py-5">
         <h1 className="text-center text-lg font-semibold">
           Developed By Sudarshan

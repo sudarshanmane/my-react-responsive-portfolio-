@@ -7,7 +7,14 @@
         font-size: 18px !important ;
     }
 
+    .hi_image{
+        width:45px;
+        height:45px
+    }
+
 }
+
+
 
 @media screen and (max-width: 980px) and (min-width: 766px) {
  
@@ -19,6 +26,11 @@
         font-size: 18px !important ;
     }
 
+   .hi_image{
+        width:35px;
+        height:35px
+    }
+
 }
 
 @media screen and (max-width: 766px) {
@@ -27,11 +39,16 @@
         justify-content: center;
         margin: auto;
     }
-     .my-name-desc{
+    .my-name-desc{
     font-size: 28px !important;
    }
     .desc-container{
         font-size: 16px !important ;
+    }
+
+     .hi_image{
+        width:30px;
+        height:30px
     }
 
 }
