@@ -7,6 +7,7 @@ import {
   MailTwoTone,
   PhoneTwoTone,
 } from "@ant-design/icons";
+import Footer from "./Footer";
 
 const HireMe = () => {
   return (
@@ -63,6 +64,7 @@ const HireMe = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

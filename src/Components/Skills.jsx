@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import Footer from "./Footer";
 
 const Skills = () => {
   const skillsDataFrontend = [
@@ -220,6 +221,7 @@ const Skills = () => {
           ))}
         </Marquee>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
