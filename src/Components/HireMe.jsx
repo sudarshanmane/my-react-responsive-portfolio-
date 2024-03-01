@@ -17,8 +17,8 @@ const HireMe = () => {
         <div className="flex    ">
           <div className="rounded-full w-7/12 overflow-auto m-auto">
             <img
-              className="overflow-auto "
-              src="https://sudarshanmane.github.io/Images/Sudarshan%20Mane.jpg"
+              className="overflow bg-teal-400"
+              src={require("../images/myImage.png")}
               alt=""
             />
           </div>
@@ -57,7 +57,7 @@ const HireMe = () => {
                 target="_blank"
               >
                 <Button className="bg-violet-950 text-white font-semibold text-lg mt-2 px-20 py-5 flex items-center justify-content-center">
-                  <span> See my Resume</span>
+                  <span>See my Resume</span>
                 </Button>
               </Link>
             </span>

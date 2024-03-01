@@ -71,6 +71,16 @@ const Navbar = () => {
             Skills
           </NavLink>
           <NavLink
+            to="/home/projects"
+            id={
+              location.pathname.split("/").includes("projects")
+                ? "current-component"
+                : ""
+            }
+          >
+            Projects
+          </NavLink>
+          <NavLink
             to="/home/experience"
             id={
               location.pathname.split("/").includes("experience")
@@ -148,6 +158,19 @@ const Navbar = () => {
           role="button"
         >
           Skills
+        </div>
+        <div className="mb-3"></div>
+        <div
+          className={`w-64 pl-2 rounded-xl border py-2 mb-1`}
+          id={
+            location.pathname.split("/").includes("projects")
+              ? "current-component-drawer"
+              : ""
+          }
+          onClick={() => navigateToLocation("/home/projects")}
+          role="button"
+        >
+          Projects
         </div>
 
         <div className="mb-3"></div>

@@ -1,0 +1,5 @@
+.project-image:hover {
+    z-index: 2;
+    transform: scale(1.1);
+}
+

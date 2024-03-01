@@ -28,7 +28,7 @@ const Education = () => {
         </div>
         <div className=" flex flex-col items-center justify-center text-violet-950 ">
           <h1 className="font-semibold education-title  ">Education</h1>
-          <h1 className="education-sub-title text-center">
+          <h1 className="education-sub-title text-center  text-green-700">
             Basic Qualification and Certifications
           </h1>
 
@@ -164,7 +164,7 @@ const Education = () => {
             contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
             date="2015"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<StarOutlined />}
+            icon={<div></div>}
           >
             <h3 className="vertical-timeline-element-title text-2xl ">10th</h3>
             <h4 className="vertical-timeline-element-subtitle text-lg">
@@ -176,7 +176,7 @@ const Education = () => {
             className="vertical-timeline-element--work"
             date="2017"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<StarOutlined />}
+            icon={<div></div>}
           >
             <h3 className="vertical-timeline-element-title text-xl">12th</h3>
             <h4 className="vertical-timeline-element-subtitle text-lg">
@@ -188,7 +188,7 @@ const Education = () => {
             className="vertical-timeline-element--work"
             date="2017 - 2021"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<StarOutlined />}
+            icon={<div></div>}
           >
             <h3 className="vertical-timeline-element-title text-xl">
               MMIT, Pune

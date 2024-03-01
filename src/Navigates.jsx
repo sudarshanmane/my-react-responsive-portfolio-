@@ -1,6 +1,7 @@
 import React, { lazy } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import App from "./App";
+import Projects from "./Components/Projects";
 
 const Description = lazy(() => import("./Components/Description"));
 const Experience = lazy(() => import("./Components/Experience"));
@@ -19,6 +20,7 @@ const Navigates = () => {
           <Route path="Experience" Component={Experience}></Route>
           <Route path="skills" Component={Skills}></Route>
           <Route path="hire-me" Component={HireMe}></Route>
+          <Route path="projects" Component={Projects}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

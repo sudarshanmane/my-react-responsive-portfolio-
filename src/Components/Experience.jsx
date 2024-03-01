@@ -6,7 +6,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { StarOutlined } from "@ant-design/icons";
 
 const Experience = () => {
   return (
@@ -22,12 +21,14 @@ const Experience = () => {
         </div>
         <div className=" flex flex-col items-center justify-center text-violet-950 ">
           <h1 className="font-semibold education-title  ">Experience</h1>
-          <h1 className="education-sub-title text-center">
-            I have worked with startup as Frontend Developer.{" "}
+          <h1 className="education-sub-title text-center  text-green-700">
+            I have worked with startup as Frontend Developer.
           </h1>
         </div>
       </div>
       <div>
+        <h1 className="font-semibold text-2xl text-center mt-10">Experience</h1>
+
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -55,8 +56,8 @@ const Experience = () => {
             <div>
               <span className="text-lg font-semibold"> Skills: </span>
               <span className="text-md font-semibold">
-                HTML5 · CSS · css3 · Bootstrap · JavaScript · ReactJs ·
-                React-Router · Redux.js · Redux-Saga · GitHub · Ant Design
+                HTML5 · CSS · Bootstrap · JavaScript · ReactJs · React-Router ·
+                Redux.js · Redux-Saga · GitHub · Ant Design
               </span>
             </div>
           </VerticalTimelineElement>

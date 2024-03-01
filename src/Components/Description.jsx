@@ -159,7 +159,7 @@ const Description = () => {
         </div>
         <div>
           <h1 className="font-bold text-2xl mb-2 text-violet-950">
-            Frontend Development
+            Frontend Development (ReactJs)
           </h1>
           <div className="flex text-2xl gap-1 flex-wrap">
             <svg
