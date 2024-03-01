@@ -373,9 +373,9 @@ const Projects = () => {
                 Responsibilities:
               </h3>
               <ol className="font-semibold">
-                <li>⚡Registration of employees</li>
-                <li>⚡Deleting employee</li>
-                <li>⚡Updating details of employee</li>
+                <li>⚡Registration of students</li>
+                <li>⚡Deletion student</li>
+                <li>⚡Updating details of student</li>
                 <li>⚡Validation Exception Handling</li>
               </ol>
 
@@ -392,7 +392,7 @@ const Projects = () => {
               <div className="flex gap-3 mt-3 justify-content-end ">
                 <Link
                   className="ml-auto"
-                  to="https://github.com/sudarshanmane/Tender_Management_System"
+                  to="https://github.com/sudarshanmane/Student_Managemet_System_A_Spring_Boot_Project"
                   target="_blank"
                 >
                   <button className="flex gap-1">

@@ -162,10 +162,14 @@ const Skills = () => {
   ];
   return (
     <div>
-      <div className="h-20"></div>{" "}
+      <div className="h-20"></div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 mt-4 mb-10">
-        <div className="flex items-center justify-center text-2xl font-bold">
+        <div className="flex flex-col  items-center justify-center text-2xl font-bold">
           <h1>Skills</h1>
+          <p className="mt-1 text-center text-slate-600 font-semibold">
+            Versatile with modern technology tools for frontend and backend
+            development.
+          </p>
         </div>
         <div>
           <img src={require("../images/skillssssss.png")} alt="aaaaa" />

@@ -2,6 +2,8 @@ import React from "react";
 import "../images/seatedImage.png";
 import { Button, Space } from "antd";
 import { Link } from "react-router-dom";
+import GitHubCalendar from "react-github-calendar";
+
 import {
   GithubOutlined,
   LinkedinOutlined,
@@ -149,7 +151,10 @@ const Description = () => {
           What I Do?
         </h1>
       </div>
-      <div className="grid -2 p-2 grid-cols-1 md:grid-cols-2 gap-2  what-fronend-development px-5 rounded-2xl border-2 border-orange-400">
+      <div
+        className="grid -2 p-2 grid-cols-1 md:grid-cols-2 gap-2  what-fronend-development px-5 rounded-2xl"
+        style={{ background: "linear-gradient(90deg, #d8dcf6, #96abc4)" }}
+      >
         <div className="m-2">
           <img
             className="bg-orange-300 w-full  rounded-2xl overflow-hidden"
@@ -500,6 +505,14 @@ const Description = () => {
             </ul>
           </div>
         </div>
+      </div>
+      <div>
+        <h1 className="mt-6 mb-5 text-center font-bold text-2xl text-pu">
+          My GitHub Calender
+        </h1>
+        <span className="bg-white flex justify-center p-5 w-fit m-auto rounded-xl">
+          <GitHubCalendar username="sudarshanmane" />
+        </span>
       </div>
       <hr style={{ borderColor: "orange", marginTop: "15px" }} />
       <div className="py-5">
