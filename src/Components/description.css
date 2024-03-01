@@ -61,6 +61,15 @@
    {
     grid-template-columns: repeat(1,1fr);
    }
-    
+}
 
+
+@media screen and (max-width:968px) {
+    .github-calender{
+        width: 100%;
+    }    
+}
+
+.my-name-top-margin{
+    margin-top: -13px;
 }

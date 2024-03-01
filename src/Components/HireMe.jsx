@@ -17,7 +17,7 @@ const HireMe = () => {
         <div className="flex    ">
           <div className="rounded-full  overflow-auto m-auto">
             <img
-              className="bg-teal-400"
+              className="bg-slate-300"
               src={require("../images/myImage.png")}
               alt=""
             />

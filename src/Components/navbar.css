@@ -21,7 +21,10 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to right, #dbdff5, #cbd2f3);
+    gap: 5px;
 }
 
 .my-name {
@@ -37,4 +40,8 @@
 
 #current-component-drawer{
     background: orange;
+}
+
+#component-drawer{
+    background: violet;
 }

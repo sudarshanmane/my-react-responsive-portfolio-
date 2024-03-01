@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import { Drawer } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -36,7 +36,9 @@ const Navbar = () => {
   return (
     <div className="navbar-container flex w-full z-10">
       <div className="navbar flex w-full justify-between px-10 py-4 items-center ">
-        <div className="my-name">&lt;Sudarshan Mane /&gt;</div>
+        <div className="my-name">
+          <Link to="/home/description">&lt;Sudarshan Mane /&gt;</Link>
+        </div>
         <div className="gap-3 hidden lg:flex xl:flex 2xl:flex">
           <NavLink
             to="/home/description"
@@ -122,24 +124,23 @@ const Navbar = () => {
         className="navbar"
       >
         <div
-          className={`w-64 pl-2 rounded-xl border py-2 mb-1`}
+          className={`w-64 pl-2 rounded-xl py-2`}
           id={
             location.pathname.split("/").includes("description")
               ? "current-component-drawer"
-              : ""
+              : "component-drawer"
           }
           onClick={() => navigateToLocation("/home/description")}
           role="button"
         >
           Home
         </div>
-        <div className="mb-3"></div>
         <div
-          className={`w-64 pl-2 rounded-xl border py-2 mb-1`}
+          className={`w-64 pl-2 rounded-xl py-2`}
           id={
             location.pathname.split("/").includes("education")
               ? "current-component-drawer"
-              : ""
+              : "component-drawer"
           }
           onClick={() => navigateToLocation("/home/education")}
           role="button"
@@ -148,38 +149,35 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`w-64 pl-2 rounded-xl border py-2 mb-1`}
+          className={`w-64 pl-2 rounded-xl py-2`}
           id={
             location.pathname.split("/").includes("skills")
               ? "current-component-drawer"
-              : ""
+              : "component-drawer"
           }
           onClick={() => navigateToLocation("/home/skills")}
           role="button"
         >
           Skills
         </div>
-        <div className="mb-3"></div>
         <div
-          className={`w-64 pl-2 rounded-xl border py-2 mb-1`}
+          className={`w-64 pl-2 rounded-xl py-2`}
           id={
             location.pathname.split("/").includes("projects")
               ? "current-component-drawer"
-              : ""
+              : "component-drawer"
           }
           onClick={() => navigateToLocation("/home/projects")}
           role="button"
         >
           Projects
         </div>
-
-        <div className="mb-3"></div>
         <div
-          className={`w-64 pl-2 rounded-xl border py-2 mb-1`}
+          className={`w-64 pl-2 rounded-xl py-2`}
           id={
             location.pathname.split("/").includes("experience")
               ? "current-component-drawer"
-              : ""
+              : "component-drawer"
           }
           onClick={() => navigateToLocation("/home/experience")}
           role="button"
@@ -187,14 +185,12 @@ const Navbar = () => {
           Experience
         </div>
 
-        <div className="mb-3"></div>
-
         <div
-          className={`w-64 pl-2 rounded-xl border py-2 mb-1`}
+          className={`w-64 pl-2 rounded-xl py-2`}
           id={
             location.pathname.split("/").includes("hire-me")
               ? "current-component-drawer"
-              : ""
+              : "component-drawer"
           }
           onClick={() => navigateToLocation("/home/hire-me")}
           role="button"

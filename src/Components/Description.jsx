@@ -4,11 +4,7 @@ import { Button, Space } from "antd";
 import { Link } from "react-router-dom";
 import GitHubCalendar from "react-github-calendar";
 
-import {
-  GithubOutlined,
-  LinkedinOutlined,
-  MediumOutlined,
-} from "@ant-design/icons";
+import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import "./description.css";
 const Description = () => {
   return (
@@ -28,7 +24,7 @@ const Description = () => {
             <span>I'm</span>
           </h1>
           <h1
-            className="font-semibold  text-violet-950 my-name-desc"
+            className="font-semibold  text-violet-950 my-name-desc my-name-top-margin"
             style={{ fontSize: "50px" }}
           >
             Sudarshan Mane
@@ -510,9 +506,9 @@ const Description = () => {
         <h1 className="mt-6 mb-5 text-center font-bold text-2xl text-pu">
           My GitHub Calender
         </h1>
-        <span className="bg-white flex justify-center p-5 w-fit m-auto rounded-xl">
+        <div className="bg-white flex justify-center p-5 w-fit m-auto rounded-xl github-calender">
           <GitHubCalendar username="sudarshanmane" />
-        </span>
+        </div>
       </div>
       <hr style={{ borderColor: "orange", marginTop: "15px" }} />
       <div className="py-5">

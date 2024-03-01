@@ -166,7 +166,7 @@ const Skills = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 mt-4 mb-10">
         <div className="flex flex-col  items-center justify-center text-2xl font-bold">
           <h1>Skills</h1>
-          <p className="mt-1 text-center text-slate-600 font-semibold">
+          <p className="mt-1 text-slate-600 font-semibold">
             Versatile with modern technology tools for frontend and backend
             development.
           </p>
@@ -180,7 +180,6 @@ const Skills = () => {
       </div>
       <div>
         <Marquee
-          gradient={true}
           speed={80}
           pauseOnHover={true}
           pauseOnClick={true}
@@ -192,7 +191,7 @@ const Skills = () => {
           {skillsDataFrontend.map((skill, id) => (
             <div
               className={`p-2 rounded-lg ml-3 ${
-                skill?.transparent ? "bg-transparent" : "bg-cyan-300"
+                skill?.transparent ? "bg-transparent" : "bg-yellow-500"
               }`}
               key="1"
             >
@@ -204,7 +203,6 @@ const Skills = () => {
       <div className="text-center text-2xl font-bold mt-5 mb-4">Tools</div>
       <div>
         <Marquee
-          gradient={true}
           speed={80}
           pauseOnHover={true}
           pauseOnClick={true}

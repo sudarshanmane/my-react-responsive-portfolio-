@@ -10,7 +10,6 @@ const Footer = () => {
           marginBottom: "15px",
         }}
       />
-
       <h1 className="text-center text-lg font-semibold">
         Developed By Sudarshan
       </h1>
