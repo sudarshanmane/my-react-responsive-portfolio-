@@ -15,9 +15,9 @@ const HireMe = () => {
       <div className="h-20"></div>
       <div className="grid gap-10 mt-10 grid-cols-1 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 ">
         <div className="flex    ">
-          <div className="rounded-full w-7/12 overflow-auto m-auto">
+          <div className="rounded-full  overflow-auto m-auto">
             <img
-              className="overflow bg-teal-400"
+              className="bg-teal-400"
               src={require("../images/myImage.png")}
               alt=""
             />
@@ -75,9 +75,11 @@ const HireMe = () => {
             tricks. Click here to visit:
           </h2>
           <div>
-            <Button className=" bg-violet-950 text-white font-semibold text-lg mt-2 px-10 py-5 flex items-center justify-content-center">
-              Visit My Blogs site
-            </Button>
+            <Link to={"https://medium.com/@sudarshanmane2110"} target="_blank">
+              <Button className=" bg-violet-950 text-white font-semibold text-lg mt-2 px-10 py-5 flex items-center justify-content-center">
+                Visit My Blogs site
+              </Button>
+            </Link>
           </div>
         </div>
         <div>
