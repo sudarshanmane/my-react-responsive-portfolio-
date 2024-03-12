@@ -126,7 +126,12 @@ const Description = () => {
             </Link>
           </div>
           <Space>
-            <Link to={"https://github.com/sudarshanmane"} target="_blank">
+            <Link
+              to={
+                "https://drive.google.com/file/d/1CeFeYERC1zHX5j9SYKypBHHn15wqRZmt/view"
+              }
+              target="_blank"
+            >
               <Button className="bg-sky-600 text-white font-semibold mt-2">
                 Resume
               </Button>
